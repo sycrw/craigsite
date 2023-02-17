@@ -1,0 +1,42 @@
+:root{
+    --maincol: rgb(0, 183, 255);
+    --secondarycol: rgb(236, 181, 0);
+    --bgcol: rgb(0,0,0);
+}
+
+body{
+    background-color: var(--bgcol);
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: right;
+
+}
+.nav_elem{
+    color: rgb(122, 122, 122);
+    font-size: 25px;
+    font-family: "Outfit";
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    font-weight: 100;
+}
+.nav_elem:hover{
+    color: var(--secondarycol);
+}
+.nav_title{
+    margin-right: auto;
+    color: rgb(122, 122, 122);
+    font-size: 25px;
+    font-family: "Outfit";
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    font-weight: 100;
+}
+@media (max-width:1000px) {
+    body{
+        color:rgb(206, 21, 0);
+    }
+    
+}
