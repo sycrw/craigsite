@@ -1,0 +1,25 @@
+.input{
+    width: 1000px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.input button{
+    color: var(--secondarycol);
+    height: 100px;
+    width: 100px !important;
+}   
+.input input{
+    color: var(--secondarycol);
+    width: 900px;
+    height: 100px;
+
+}
+.box{
+    border-radius: 100px;
+    outline: solid var(--secondarycol) 3px;
+    background-color: transparent;
+    padding: 0 10px 0 10px;
+    padding-inline: 10px;
+    border: none;
+}
