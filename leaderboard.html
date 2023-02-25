@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>craigsite</title>
+    <link rel="stylesheet" href="stylesheets/general.css">
+    <link rel="stylesheet" href="stylesheets/leaderboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit" rel="stylesheet">
+    <script src="logic/stats.js" defer></script>
+    <script src="logic/leaderboard.js"></script>
+</head>
+
+<body>
+    <header>
+        <a class="nav_elem nav_left" href="index.html">craig</a>
+        <a class="nav_elem">creator</a>
+        <a href="stats.html" class="nav_elem">stats</a>
+        <a href="" class="nav_elem active">leaderboard</a>
+    </header>
+    <main>
+        <div class="options">
+            <button class = "button-active selector" id = "10" onclick="handleButtonClick(10)">
+                10
+            </button>
+            <button id = "50" class = "selector" onclick="handleButtonClick(50)">
+                50
+            </button>
+            <button id = "100" class = "selector" onclick="handleButtonClick(100)">
+                100
+            </button>
+            <button id = "1000" class = "selector" onclick="handleButtonClick(1000)">
+                1000
+            </button>
+        </div>
+        <table class = "leaderboard">
+            <tr>
+                <th>
+                    pos
+                </th>
+                <th>
+                    name
+                </th>
+                <th>
+                    on hand
+                </th>
+                <th>
+                    bank
+                </th>
+                <th>
+                    total
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    <div>
+                        <a>sycrw</a>
+                    <img src="https://cdn.discordapp.com/avatars/779422032374005780/0544f72278b1ac725e8dfc2bddd5518c" alt="pfp">
+                    </div>
+                </td>
+                <td>
+                    100
+                </td>
+                <td>
+                    100
+                </td>
+                <td>
+                    200
+                </td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

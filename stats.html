@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +9,32 @@
     <link rel="stylesheet" href="stylesheets/general.css">
     <link rel="stylesheet" href="stylesheets/stats.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit" rel="stylesheet">
-    <script src="logic/stats.js"></script>
+    <script src="logic/stats.js" defer></script>
 </head>
+
 <body>
     <header>
-        <a class = "nav_elem nav_left" href = "index.html">craig</a>
-        <a class = "nav_elem">creator</a>
-        <a href="" class = "nav_elem active">stats</a>
-        <a href="" class = "nav_elem">leaderboard</a>
+        <a class="nav_elem nav_left" href="index.html">craig</a>
+        <a class="nav_elem">creator</a>
+        <a href="" class="nav_elem active">stats</a>
+        <a href="leaderboard.html" class="nav_elem">leaderboard</a>
     </header>
     <main>
-        <div class = "input">
-            <input id = "input"class = "box" type="number" placeholder="your discord id!">
+        <div class="input">
+            <input id="input" class="box" type="number" placeholder="your discord id!" oninput="handleInput()">
         </div>
-        <div class = "stats">
-            <div class = "generalStats box">
-                <a id = "name">xTeta</a>
-                <img id = "pfp" src="https://cdn.discordapp.com/avatars/558660514818031616/b2a3a94983edd27740ebd205a4162a7c" alt="">
-            </div>
-            <div class = "moneyStats">
+        <div class="stats"><!---->
+            <div class="general">
 
             </div>
+            <table class="moneyStats">
+                
+            </table>
         </div>
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>
