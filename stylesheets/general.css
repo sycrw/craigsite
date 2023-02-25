@@ -37,3 +37,7 @@ main{
 .active{
     color: var(--secondarycol);
 }
+.box{
+    border-radius: 100px;
+    border: solid var(--secondarycol) 3px;
+}

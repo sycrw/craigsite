@@ -1,25 +1,38 @@
 .input{
-    width: 1000px;
     display:flex;
     justify-content: center;
     align-items: center;
+    width: 80%;
 }
-.input button{
-    color: var(--secondarycol);
-    height: 100px;
-    width: 100px !important;
-}   
 .input input{
+    font-size: 40px;
     color: var(--secondarycol);
-    width: 900px;
-    height: 100px;
-
-}
-.box{
-    border-radius: 100px;
-    outline: solid var(--secondarycol) 3px;
+    width: 100%;
     background-color: transparent;
-    padding: 0 10px 0 10px;
-    padding-inline: 10px;
-    border: none;
+    margin-inline:10px;
+    font-family: "Outfit";
+    text-align: center;
+}
+.stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.generalStats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5%;
+    margin-top: 10%;
+}
+.generalStats a{
+    font-family: "Outfit";
+    color: var(--secondarycol);
+    font-size: 35px;
+}
+.generalStats img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
 }
