@@ -1,18 +1,17 @@
-
-async function handleButtonClick(num){
-    loaded = false;
+async function handleButtonClick(num) {
     button = document.getElementById(String(num));
     console.log(button);
     let selectors = document.querySelectorAll(".selector");
     selectors.forEach(e => {
         e.className = "selector";
+        e.disabled = true;
     })
     button.className += " button-active";
     loadLeaderboard(num);
 }
 
 loadLeaderboard(10);
-async function loadLeaderboard(num){
+async function loadLeaderboard(num) {
     let res = await fetch(`https://lsglab.ddns.net/craig/leaderboard?length=${num}`);
     res = await res.json()
     let leaderboard = document.querySelector(".leaderboard");
@@ -36,17 +35,17 @@ async function loadLeaderboard(num){
             </tr>
     `;
     console.log(res);
-    res.forEach(async (e,i) => {
-        
+    for (let i = 0; i < res.length; i++) {
+        const e = res[i];
         let data = await fetch(`https://lsglab.ddns.net/craig/discordstats?id=${e.userid}`);
         data = await data.json();
         console.log(data);
-        let insert; 
-        if(data.avatar == null){
+        let insert;
+        if (data.avatar == null) {
             insert = `
            <tr>
                 <td>
-                    ${i+1}
+                    ${i + 1}
                 </td>
                 <td>
                     <div>
@@ -66,11 +65,11 @@ async function loadLeaderboard(num){
             </tr>
         `
         }
-        else{
+        else {
             insert = `
            <tr>
                 <td>
-                    ${i+1}
+                    ${i + 1}
                 </td>
                 <td>
                     <div>
@@ -91,6 +90,10 @@ async function loadLeaderboard(num){
         `
         }
         leaderboard.innerHTML += insert;
-    });
-    return true;
+    }
+        let selectors = document.querySelectorAll(".selector");
+        selectors.forEach(e => {
+            console.log(e);
+            e.disabled = false;
+        })
 }

@@ -1,0 +1,67 @@
+.input{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.input input{
+    font-size: 40px;
+    color: var(--secondarycol);
+    width: 100%;
+    background-color: transparent;
+    margin-inline:10px;
+    font-family: "Outfit";
+    text-align: center;
+    outline: none;
+}
+/*so no arrows*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+.stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+.general{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5%;
+    margin-top: 1%;
+}
+.general a{
+    font-family: "Outfit";
+    color: var(--secondarycol);
+    font-size: 35px;
+}
+.general img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right:5% ;
+}
+/*stats grid */
+.moneyStats{
+    margin-top: 1%;
+    font-size: 20px;
+    font-family: "Outfit";
+    border-collapse: collapse;
+}
+.moneyStats tr td,th{
+    border: 3px solid var(--secondarycol);
+    font-size: 20px;
+    font-family: "Outfit";
+    color: var(--secondarycol);
+    text-align: center;
+    padding: 20px;
+}   
+
+
